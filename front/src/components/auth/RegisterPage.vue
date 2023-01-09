@@ -29,9 +29,9 @@ const form = ref({
   terms_and_conditions: false
 })
 
-const handleRegister = () => {
+const handleRegister = async () => {
   try {
-    userStore.handleRegister(form.value)
+    await userStore.handleRegister(form.value)
     router.push({ name: 'dashboard' })
   } catch (e) {
     Notify.create('Error during register')

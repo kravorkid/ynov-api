@@ -8,7 +8,7 @@
         <router-link to="/login">
           Se connecter
         </router-link>
-        <q-btn outline label="S'inscrire" color="primary" no-caps class="q-mx-md"/>
+        <q-btn outline label="S'inscrire" color="primary" no-caps class="q-mx-md" to="/register"/>
       </q-toolbar>
     </q-header>
     <q-page-container>
